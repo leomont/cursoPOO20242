@@ -27,3 +27,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 ## Listado de Estudiantes
 - David Bulla | Cod. 56572
 - MATEO RESTREPO CIRO | Cod.56485
+- Santiago Soler | Cod. 56798
