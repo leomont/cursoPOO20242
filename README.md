@@ -19,3 +19,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - **Abstracción:** Definición de clases y métodos abstractos para representar conceptos genéricos.
 
 ## Estructura del Proyecto
+MATEO RESTREPO CIRO
