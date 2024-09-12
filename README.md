@@ -29,3 +29,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - MATEO RESTREPO CIRO | Cod.56485
 - JUAN MANUEL TORRES | Cod. 54836
 - Juan Esteban Ospina | Cod. 56736
+- ANGEL DAVID BOTINA OSORIO | Cod. 54988
