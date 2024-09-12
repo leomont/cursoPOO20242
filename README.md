@@ -1,7 +1,7 @@
 
 
 Aquí tienes un ejemplo de un archivo README.md para un proyecto de Programación Orientada a Objetos (POO). Este archivo está diseñado para un proyecto de POO en cualquier lenguaje de programación, como Java, Python
-
+-
 ##Orientador del curso:
 Profesor Leonardo Montes
 
@@ -27,3 +27,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 ## Listado de Estudiantes
 - David Bulla | Cod. 56572
 - MATEO RESTREPO CIRO | Cod.56485
+- JUAN MANUEL TORRES | Cod. 54836
