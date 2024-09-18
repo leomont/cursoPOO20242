@@ -31,3 +31,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - Juan Esteban Ospina | Cod. 56736
 - Emmanuel Echeverri Martínez | Cod. 52721
 - Daniel Duque R. | Cod. 52721
+- Coral Dayane Perez Manrique | Cod. 45343
