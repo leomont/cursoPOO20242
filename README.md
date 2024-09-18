@@ -31,3 +31,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - Emmanuel Echeverri Martínez | Cod. 52721
 - Daniel Duque R. | Cod. 52721
 - Juan Esteban Ospina | Cod. 56736
+- Zara Meza Clavijo | Cod. 56763
