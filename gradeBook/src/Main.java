@@ -12,9 +12,7 @@ public class Main {
 
         nombreCurso = sc.nextLine();
 
-        gradeBook curso = new gradeBook();
-
-        curso.setCourseName(nombreCurso);
+        gradeBook curso = new gradeBook(nombreCurso);
 
         curso.displayMessage(nombreCurso);
 

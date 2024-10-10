@@ -5,6 +5,10 @@ public class gradeBook {
     public gradeBook() {
     }
 
+    public gradeBook(String courseName) {
+        this.courseName = courseName;
+    }
+
     public String getCourseName() {
         return courseName;
     }
