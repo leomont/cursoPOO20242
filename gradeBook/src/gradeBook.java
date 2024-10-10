@@ -17,9 +17,9 @@ public class gradeBook {
         this.courseName = courseName;
     }
 
-    public void displayMessage(String nombreCurso)
+    public void displayMessage()
     {
-        System.out.println("curso ingresado: " + nombreCurso);
+        System.out.println("curso ingresado: " + getCourseName());
     }
 
 

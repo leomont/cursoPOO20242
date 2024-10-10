@@ -14,7 +14,7 @@ public class Main {
 
         gradeBook curso = new gradeBook(nombreCurso);
 
-        curso.displayMessage(nombreCurso);
+        curso.displayMessage();
 
     }
 }
