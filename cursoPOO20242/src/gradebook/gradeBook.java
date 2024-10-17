@@ -1,3 +1,5 @@
+package gradebook;
+
 public class gradeBook {
 
     private String courseName = "";
