@@ -10,11 +10,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String nombreCurso= "";
-        System.out.println("Ingrese curso: ");
+        String nombreInstructor= "";
 
+        System.out.println("Ingrese curso: ");
         nombreCurso = sc.nextLine();
 
-        gradeBook curso = new gradeBook(nombreCurso);
+        System.out.println("Ingrese el nombre del instructor que presenta la clase: ");
+        nombreInstructor = sc.nextLine();
+
+        gradeBook curso = new gradeBook(nombreCurso, nombreInstructor);
 
         curso.displayMessage();
 

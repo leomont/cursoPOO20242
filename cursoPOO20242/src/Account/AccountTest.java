@@ -39,6 +39,28 @@ public class AccountTest {
          account1.getName(), account1.getBalance()); 
       System.out.printf("%s balance: $%.2f%n%n",
          account2.getName(), account2.getBalance()); 
+
+      // Debit amount
+      System.out.print("Ingrese el valor que desea retirar de la cuenta 1: ");
+      Double debitAmount = input.nextDouble();
+      System.out.printf("%nretirando %.2f de la cuenta 1 %n%n", 
+         debitAmount);
+      account1.debit(debitAmount);
+
+      System.out.print("Ingrese el valor que desea retirar de la cuenta 2: "); // prompt
+      debitAmount = input.nextDouble(); // obtain user input
+      System.out.printf("%nretirando %.2f de la cuenta 2 %n%n", 
+         debitAmount);
+      account2.debit(debitAmount);
+
+      // display balances
+      System.out.println();
+      System.out.printf("%s balance: $%.2f%n", 
+         account1.getName(), account1.getBalance()); 
+      System.out.printf("%s balance: $%.2f%n%n",
+         account2.getName(), account2.getBalance());
+
+
    } 
 } 
 
