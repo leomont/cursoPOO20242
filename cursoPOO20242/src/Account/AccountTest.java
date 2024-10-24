@@ -34,6 +34,18 @@ public class AccountTest {
          depositAmount);
       account2.deposit(depositAmount); // add to account2 balance
 
+      //retiro
+      System.out.print("Ingrese el monto para debitar de la cuenta 1: ");
+      double withdrawAmount1 = input.nextDouble();
+      System.out.printf("%nwithdrawing %.2f from account1%n%n", withdrawAmount1);
+      account1.debit(withdrawAmount1);
+
+
+      System.out.print("Ingrese el monto para debitar de la cuenta 2: ");
+      double withdrawAmount2 = input.nextDouble();
+      System.out.printf("%nwithdrawing %.2f from account2%n%n", withdrawAmount2);
+      account2.debit(withdrawAmount2);
+
       // display balances
       System.out.printf("%s balance: $%.2f%n", 
          account1.getName(), account1.getBalance()); 
@@ -42,17 +54,3 @@ public class AccountTest {
    } 
 } 
 
-/**************************************************************************
- * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/

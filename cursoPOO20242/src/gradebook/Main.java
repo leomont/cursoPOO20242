@@ -14,7 +14,13 @@ public class Main {
 
         nombreCurso = sc.nextLine();
 
-        gradeBook curso = new gradeBook(nombreCurso);
+        String intructorName = sc.nextLine();
+        System.out.println("ingrese nombre profesor: ");
+
+        intructorName = sc.nextLine();
+        sc.close();
+
+        gradeBook curso = new gradeBook(nombreCurso, intructorName);
 
         curso.displayMessage();
 
