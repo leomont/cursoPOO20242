@@ -40,3 +40,24 @@ public class GradeBook {
         System.out.println("Este curso es presentado por: " + getInstructorName());
     }
 }
+
+
+modificaciones para el gradebook test 
+
+
+public class GradeBookTest {
+    public static void main(String[] args) {
+        // Creación del objeto GradeBook con nombre del curso e instructor
+        GradeBook gradeBook = new GradeBook("Programacion orientada a objetos", "");
+
+        // Mostrar mensaje inicial
+        gradeBook.displayMessage();
+
+        // Cambiar el nombre del instructor
+        gradeBook.setInstructorName("leonardo");
+        
+        // Mostrar mensaje actualizado después de cambiar el nombre del instructor
+        System.out.println("\nActualización del nombre del instructor...");
+        gradeBook.displayMessage();
+    }
+}
