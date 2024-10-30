@@ -1,0 +1,121 @@
+
+
+import java.util.Scanner;
+
+public class AccountTest {
+    public static void main(String[] args) {
+        Account account1 = new Account("Jane Green", 50.00);
+        Account account2 = new Account("John Blue", -7.53); 
+
+        // Mostrar el saldo inicial de cada objeto
+        System.out.printf("%s balance: $%.2f%n",
+            account1.getName(), account1.getBalance()); 
+        System.out.printf("%s balance: $%.2f%n%n",
+            account2.getName(), account2.getBalance()); 
+
+        // Crear un Scanner para obtener entrada del usuario
+        Scanner input = new Scanner(System.in);
+
+        // Prueba de depósitos
+        System.out.print("Enter deposit amount for account1: "); // prompt
+        double depositAmount = input.nextDouble(); // obtener entrada del usuario
+        System.out.printf("%nadding %.2f to account1 balance%n%n", 
+            depositAmount);
+        account1.deposit(depositAmount); // añadir al saldo de account1
+
+        // Mostrar saldos
+        System.out.printf("%s balance: $%.2f%n",
+            account1.getName(), account1.getBalance()); 
+        System.out.printf("%s balance: $%.2f%n%n",
+            account2.getName(), account2.getBalance()); 
+
+        System.out.print("Enter deposit amount for account2: "); // prompt
+        depositAmount = input.nextDouble(); // obtener entrada del usuario
+        System.out.printf("%nadding %.2f to account2 balance%n%n", 
+            depositAmount);
+        account2.deposit(depositAmount); // añadir al saldo de account2
+
+        // Mostrar saldos
+        System.out.printf("%s balance: $%.2f%n", 
+            account1.getName(), account1.getBalance()); 
+        System.out.printf("%s balance: $%.2f%n%n",
+            account2.getName(), account2.getBalance()); 
+
+        // Prueba de débitos
+        System.out.print("Enter debit amount for account1: "); // prompt
+        double debitAmount = input.nextDouble(); // obtener entrada del usuario
+        System.out.printf("%nDebiting %.2f from account1 balance%n%n", 
+            debitAmount);
+        account1.debit(debitAmount); // debitar de account1
+
+        // Mostrar saldos después del débito
+        System.out.printf("%s balance: $%.2f%n", 
+            account1.getName(), account1.getBalance()); 
+        System.out.printf("%s balance: $%.2f%n%n",
+            account2.getName(), account2.getBalance()); 
+
+        // Prueba de un débito que excede el saldo
+        System.out.print("Enter debit amount for account2: "); // prompt
+        debitAmount = input.nextDouble(); // obtener entrada del usuario
+        System.out.printf("%nDebiting %.2f from account2 balance%n%n", 
+            debitAmount);
+        account2.debit(debitAmount); // debitar de account2
+
+        // Mostrar saldos después del débito
+        System.out.printf("%s balance: $%.2f%n", 
+            account1.getName(), account1.getBalance()); 
+        System.out.printf("%s balance: $%.2f%n%n",
+            account2.getName(), account2.getBalance()); 
+    } 
+}
+
+
+
+public class Account {
+    private String name; // nombre de la cuenta
+    private double balance; // saldo de la cuenta
+
+    // constructor
+    public Account(String name, double balance) {
+        this.name = name;
+        if (balance > 0.0) {
+            this.balance = balance;
+        }
+    }
+
+    // método para establecer el nombre
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // método para obtener el nombre
+    public String getName() {
+        return name;
+    }
+
+    // método para establecer el saldo
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    // método para obtener el saldo
+    public double getBalance() {
+        return balance;
+    }
+
+    // método para depositar dinero
+    public void deposit(double depositAmount) {
+        if (depositAmount > 0.0) {
+            balance += depositAmount;
+        }
+    }
+
+    // método para debitar dinero
+    public void debit(double debitAmount) {
+        if (debitAmount > balance) {
+            System.out.println("El monto del débito excedió el saldo de la cuenta.");
+        } else {
+            balance -= debitAmount;
+        }
+    }
+}
