@@ -30,5 +30,7 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - JUAN MANUEL TORRES | Cod. 54836
 - Emmanuel Echeverri Martínez | Cod. 52721
 - Daniel Duque R. | Cod. 52721
+- Coral Dayane Perez Manrique | Cod. 45343
+- Juliana Morales Valencia | Cod.56476
 - Juan Esteban Ospina | Cod. 56736
 - Zara Meza Clavijo | Cod. 56763
