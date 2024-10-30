@@ -42,10 +42,10 @@ public class AccountTest {
       if (debitAmount > account1.getBalance()){
          System.out.printf("%El monto del débito [ %.2f] excedió el saldo de la cuenta %n%n", 
          debitAmount);
-         account1.debit(debitAmount); // extract amount to account1 balance
       }else{
          System.out.printf("%nextract %.2f to account1 balance%n%n", 
          debitAmount);
+         account1.debit(debitAmount); // extract amount to account1 balance
       }
 
       // display balances
@@ -58,10 +58,10 @@ public class AccountTest {
       if (debitAmount > account2.getBalance()){
          System.out.printf("%El monto del débito [ %.2f] excedió el saldo de la cuenta %n%n", 
          debitAmount);
-         account2.debit(debitAmount); // extract amount to account2 balance
       }else{
          System.out.printf("%nextract %.2f to account2 balance%n%n", 
          debitAmount);
+         account2.debit(debitAmount); // extract amount to account2 balance
       }
 
       // display balances

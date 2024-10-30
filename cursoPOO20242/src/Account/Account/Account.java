@@ -28,6 +28,7 @@ public class Account {
    // method that debits (remove) only a valid amount to the balance
    public void debit(double debitAmount) {      
       if (debitAmount <= balance){
+         System.out.printf("%s %s", debitAmount, balance);
          balance = balance - debitAmount;
       }
    }
