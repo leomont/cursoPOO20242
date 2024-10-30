@@ -1,4 +1,4 @@
-package gradebook;
+import gradeBook.*;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Main {
 
         nombreCurso = sc.nextLine();
 
-        gradeBook curso = new gradeBook(nombreCurso);
+        GradeBook curso = new GradeBook(nombreCurso);
 
         curso.displayMessage();
 
