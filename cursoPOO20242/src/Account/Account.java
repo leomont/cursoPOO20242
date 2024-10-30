@@ -24,6 +24,14 @@ public class Account {
          balance = balance + depositAmount; // add it to the balance 
       }
    }
+   // method of debit amount
+   public void debit(double debitAmount) {
+      if (debitAmount > balance) {
+         System.out.println("El monto del débito excedió el saldo de la cuenta");
+      } else if (debitAmount > 0.0) {
+         balance = balance - debitAmount;
+      }
+   }
 
    // method returns the account balance
    public double getBalance() {

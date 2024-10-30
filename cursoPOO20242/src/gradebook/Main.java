@@ -10,11 +10,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String nombreCurso= "";
-        System.out.println("Ingrese curso: ");
 
+        // Creación de la variable de instancia String la cual representael nombre del instructor del curso
+
+        String nombreInstructor= "";
+
+        System.out.println("Ingrese curso: ");
         nombreCurso = sc.nextLine();
 
-        gradeBook curso = new gradeBook(nombreCurso);
+
+        //Solicito al usuario el nombre del instructor y lo almaceno en la variable creada anteriormente
+        System.out.println("Ingrese el nombre del instructor del curso: ");
+        nombreInstructor = sc.nextLine();
+
+        gradeBook curso = new gradeBook(nombreCurso, nombreInstructor);
 
         curso.displayMessage();
 
