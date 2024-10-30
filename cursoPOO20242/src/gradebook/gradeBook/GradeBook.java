@@ -6,8 +6,9 @@ public class GradeBook {
     private String instructorName = "";
 
     // Función Constructora
-    public GradeBook(String courseName) {
+    public GradeBook(String courseName, String instructorName) {
         this.courseName = courseName;
+        this.instructorName = instructorName;
     }
 
     // Gestiona Nombre de Curso
@@ -24,14 +25,14 @@ public class GradeBook {
         this.instructorName = instructorName;
     }
 
-    public String getInstructorName(String instructorName) {
+    public String getInstructorName() {
         return this.instructorName;
     }
 
     // Muestra el contenido de las propiedades de la instancia
     public void displayMessage()
     {
-        System.out.println("curso ingresado: " + getCourseName());
+        System.out.printf("\nBienvenido, %nEl curso ingresado es: %s %nEste curso es presentado por: %s %n",getCourseName(), getInstructorName());
     }
 
 
