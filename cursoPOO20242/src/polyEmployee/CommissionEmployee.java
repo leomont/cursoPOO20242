@@ -1,9 +1,9 @@
-package Employee;
+package polyEmployee;
 
 // Fig. 9.10: CommissionEmployee.java
 // CommissionEmployee class uses methods to manipulate its 
 // private instance variables.
-public class CommissionEmployee{
+public class CommissionEmployee {
    private final String firstName;                        
    private final String lastName;                         
    private final String socialSecurityNumber;             
