@@ -25,8 +25,7 @@ public class PolymorphismTest {
          basePlusCommissionEmployee.toString());
 
       // invoke toString on subclass object using superclass variable
-      CommissionEmployee commissionEmployee2 =
-         basePlusCommissionEmployee;          
+      CommissionEmployee commissionEmployee2 = basePlusCommissionEmployee;
       System.out.printf("%s %s:%n%n%s%n", 
          "Call BasePlusCommissionEmployee's toString with superclass",
          "reference to subclass object", commissionEmployee2.toString());
