@@ -1,7 +1,7 @@
 // Fig. 3.8: Account.java
 // Account class with a double instance variable balance and a constructor
 // and deposit method that perform validation.
-package Account;
+package account;
 
 public class Account {
    private String name; // instance variable 
@@ -22,6 +22,14 @@ public class Account {
    public void deposit(double depositAmount) {      
       if (depositAmount > 0.0) { // if the depositAmount is valid
          balance = balance + depositAmount; // add it to the balance 
+      }
+   }
+
+   // method that debits (remove) only a valid amount to the balance
+   public void debit(double debitAmount) {      
+      if (debitAmount <= balance){
+         System.out.printf("%s %s", debitAmount, balance);
+         balance = balance - debitAmount;
       }
    }
 

@@ -1,17 +1,18 @@
-package Account;// Fig. 3.9: AccountTest.java
+package account;// Fig. 3.9: AccountTest.java
 // Inputting and outputting floating-point numbers with Account objects.
 import java.util.Scanner;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class AccountTest {
    public static void main(String[] args) {
       Account account1 = new Account("Jane Green", 50.00);
       Account account2 = new Account("John Blue", -7.53); 
 
+      Account[] accountsAvailable = {account1, account2};
+
       // display initial balance of each object
-      System.out.printf("%s balance: $%.2f%n",
-         account1.getName(), account1.getBalance()); 
-      System.out.printf("%s balance: $%.2f%n%n",
-         account2.getName(), account2.getBalance()); 
+      displayBalances(accountsAvailable);
 
       // create a Scanner to obtain input from the command window
       Scanner input = new Scanner(System.in);
@@ -23,10 +24,7 @@ public class AccountTest {
       account1.deposit(depositAmount); // add to account1's balance
 
       // display balances
-      System.out.printf("%s balance: $%.2f%n",
-         account1.getName(), account1.getBalance()); 
-      System.out.printf("%s balance: $%.2f%n%n",
-         account2.getName(), account2.getBalance()); 
+      displayBalances(accountsAvailable);
 
       System.out.print("Enter deposit amount for account2: "); // prompt
       depositAmount = input.nextDouble(); // obtain user input
@@ -35,11 +33,48 @@ public class AccountTest {
       account2.deposit(depositAmount); // add to account2 balance
 
       // display balances
-      System.out.printf("%s balance: $%.2f%n", 
-         account1.getName(), account1.getBalance()); 
-      System.out.printf("%s balance: $%.2f%n%n",
-         account2.getName(), account2.getBalance()); 
-   } 
+      displayBalances(accountsAvailable);
+
+      // Debit methods to two accounts
+      System.out.print("Enter a debit amount for account1: ");
+      double debitAmount = input.nextDouble();
+      
+      if (debitAmount > account1.getBalance()){
+         System.out.printf("%El monto del débito [ %.2f] excedió el saldo de la cuenta %n%n", 
+         debitAmount);
+      }else{
+         System.out.printf("%nextract %.2f to account1 balance%n%n", 
+         debitAmount);
+         account1.debit(debitAmount); // extract amount to account1 balance
+      }
+
+      // display balances
+      displayBalances(accountsAvailable);
+
+
+      System.out.print("Enter a debit amount for account2: ");
+      debitAmount = input.nextDouble();
+      
+      if (debitAmount > account2.getBalance()){
+         System.out.printf("%El monto del débito [ %.2f] excedió el saldo de la cuenta %n%n", 
+         debitAmount);
+      }else{
+         System.out.printf("%nextract %.2f to account2 balance%n%n", 
+         debitAmount);
+         account2.debit(debitAmount); // extract amount to account2 balance
+      }
+
+      // display balances
+      displayBalances(accountsAvailable);
+ 
+   }
+   public static void displayBalances(Account[] accounts){
+      // display balances
+      for(int i = 0; i < accounts.length; i += 1){
+         Account account = accounts[i];
+         System.out.printf("%s balance: $%.2f%n", account.getName(), account.getBalance());
+      }
+   }
 } 
 
 /**************************************************************************
