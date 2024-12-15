@@ -33,3 +33,4 @@ Este proyecto tiene como objetivo aplicar los principios de la Programación Ori
 - Daniel Duque R. | Cod. 52721
 - Coral Dayane Perez Manrique | Cod. 45343
 - Juliana Morales Valencia | Cod.56476
+- Brayan Stiven Agudelo | Cod.56596
